@@ -18,3 +18,29 @@ body {
     font-family: "DM Sans", sans-serif;
     color: var(--text-light);
 }
+
+/* ==================== FOOTER ===================== */
+footer {
+    padding-top: 0.8rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+footer :is(i, a) {
+    color: var(--main-color);
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration-style: dashed;
+    text-underline-offset: 3px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration-style: solid;
+    text-underline-offset: 1px;
+}
