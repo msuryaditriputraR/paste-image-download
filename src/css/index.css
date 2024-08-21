@@ -1,0 +1,8 @@
+/* ==================== CSS VARIABLE ===================== */
+:root {
+    --main-color: rgb(192, 72, 192);
+    --text-light: #374151;
+    --text-dark: #e5e7eb;
+    --bg-light: #fff;
+    --bg-dark: #121212;
+}
