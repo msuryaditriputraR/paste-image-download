@@ -19,12 +19,19 @@
 body {
     font-family: "DM Sans", sans-serif;
     color: var(--text-light);
+    background-color: var(--bg-light);
 }
 
 .container {
     position: relative;
     margin: var(--margin-container);
     height: calc(100vh - (var(--margin-container) * 2) - (0.85rem * 2));
+}
+
+/* ==================== DARK THEME ===================== */
+body.dark {
+    color: var(--text-dark);
+    background-color: var(--bg-dark);
 }
 
 /* ==================== HEADER ===================== */
