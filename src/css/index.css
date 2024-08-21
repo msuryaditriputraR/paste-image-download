@@ -19,11 +19,73 @@ body {
     color: var(--text-light);
 }
 
-/* ==================== FOOTER ===================== */
-footer {
-    padding-top: 0.8rem;
+/* ==================== HEADER ===================== */
+header {
+    display: none;
 }
 
+/* ==================== MAIN ===================== */
+main {
+    margin: 2rem;
+    height: calc(100vh - 4rem - (0.85rem * 2));
+    border: 3px dashed var(--main-color);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
+
+.main__icon {
+    font-size: 10rem;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.main__icon::after {
+    content: "";
+    width: 60%;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    transform: translateX(50%) scale(0);
+    border-radius: 50%;
+    transform-origin: center;
+    transition: transform 0.3s;
+}
+
+main:hover .main__icon {
+    transform: translateY(-20px);
+}
+
+main:hover .main__icon::after {
+    bottom: 0;
+    transform: translateX(35%) scale(1);
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.instruction {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.instruction__highlight {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.instruction2 {
+    font-style: italic;
+    font-weight: 800;
+}
+
+/* ==================== FOOTER ===================== */
 footer p {
     text-align: center;
     font-size: 0.85rem;
