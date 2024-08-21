@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paste Image to Download</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Paste Image to Download</title>
 
-  <!--- ==================== GOOGLE FONTS ===================== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        <!--- ==================== GOOGLE FONTS ===================== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+        />
 
-  <!--- ==================== REMIX ICON ===================== -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+        <!--- ==================== REMIX ICON ===================== -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
 
-<!--- ==================== ICON ===================== -->
-<link rel="shortcut icon" href="./src/img/favicon.svg" type="image/x-icon">
+        <!--- ==================== ICON ===================== -->
+        <link
+            rel="shortcut icon"
+            href="./src/img/favicon.svg"
+            type="image/x-icon"
+        />
 
-<!--- ==================== CSS ===================== -->
-<link rel="stylesheet" href="./src/css/index.css">
+        <!--- ==================== CSS ===================== -->
+        <link rel="stylesheet" href="./src/css/index.css" />
+    </head>
+    <body>
+        <header>
+            <i
+                class="ri-file-paper-2-line"
+                id="btn-story"
+                title="Button Story"
+                aria-label="Button Story"
+            ></i>
+            <i
+                class="ri-sun-fill"
+                id="btn-theme"
+                title="Button Theme"
+                aria-label="Button Theme"
+            ></i>
+        </header>
 
-</head>
-<body>
-  
-  <!--- ==================== JAVASCRIPT ===================== -->
-  <script src="./src/js/index.js"></script>
-</body>
+        <main>
+            <i
+                class="ri-file-download-line"
+                aria-hidden="true"
+                class="main__icon"
+            ></i>
+            <h1>Paste Image to Download</h1>
+            <p class="instruction">
+                Use <span class="instruction__highlight">Ctrl + v</span> to
+                <strong> Paste & Download </strong> from your clipboard.
+            </p>
+            <p class="instruction2">You can also click me</p>
+        </main>
+
+        <footer>
+            <p>
+                Made with <i class="ri-heart-fill"></i> by
+                <a
+                    href="https://github.com/msuryaditriputraR"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Dandi</a
+                >
+            </p>
+        </footer>
+        <!--- ==================== JAVASCRIPT ===================== -->
+        <script src="./src/js/index.js"></script>
+    </body>
 </html>
