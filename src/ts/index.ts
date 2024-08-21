@@ -1,3 +1,5 @@
+import roll from "./roll.js";
+
 /* ==================== TOGGLE THEME ===================== */
 const btnTheme = document.getElementById("btn-theme");
 const body = document.body;
@@ -20,3 +22,16 @@ if (btnTheme) {
         }
     });
 }
+
+/* ==================== CHANGE MAIN COLOR ===================== */
+function changeMainColor() {
+    const root = document.documentElement;
+
+    const r = roll(10, 250);
+    const g = roll(10, 250);
+    const b = roll(10, 250);
+
+    root.style.setProperty("--main-color", `rgb(${r},${g}, ${b})`);
+}
+
+setInterval(changeMainColor, 1500);
