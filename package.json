@@ -1,0 +1,26 @@
+{
+  "name": "paste-image-download",
+  "version": "1.0.0",
+  "description": "A web utility to download image from your clipboard",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msuryaditriputraR/paste-image-download.git"
+  },
+  "keywords": [
+    "clipboard",
+    "Typescript",
+    "Web"
+  ],
+  "author": "@msuryaditriputraR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msuryaditriputraR/paste-image-download/issues"
+  },
+  "homepage": "https://github.com/msuryaditriputraR/paste-image-download#readme"
+}
