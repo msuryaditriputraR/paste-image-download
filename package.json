@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/msuryaditriputraR/paste-image-download/issues"
   },
-  "homepage": "https://github.com/msuryaditriputraR/paste-image-download#readme"
+  "homepage": "https://github.com/msuryaditriputraR/paste-image-download#readme",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
 }
