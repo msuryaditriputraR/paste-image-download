@@ -2,6 +2,11 @@
   <img src="./src/img/favicon.svg" width="100px" alt="logo">
 </p>
 <h1 align='center'> PASTE IMAGE TO DOWNLOAD</h1>
+<p align='center'>
+  <a href="https://msuryaditriputrar.github.io/paste-image-download/">
+    Go To App
+  </a>
+</p>
 
 ## TABLE OF CONTENTS
 - [TABLE OF CONTENTS](#table-of-contents)
