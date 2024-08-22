@@ -32,8 +32,9 @@ body {
 /* ==================== TRANSITION COLOR ===================== */
 main,
 .instruction__highlight,
+.main__icon::after,
 footer :is(i, a) {
-    transition-property: color, border-color;
+    transition-property: color, border-color, background-color;
     transition-duration: 0.3s;
 }
 
@@ -46,6 +47,10 @@ body.dark .modal__box {
 
 body.dark .modal__box {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+body.dark .main__icon::after {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* ==================== HEADER ===================== */
