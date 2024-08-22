@@ -25,6 +25,7 @@ No data is ever sent.
 ![ScreenShot Desktop](./src/img/screenshot-desktop.png)
 
 - Mobile
+  <br />
 ![ScreenShot Mobile](./src/img/screenshot-mobile.png)
 
 ## FEATURE
