@@ -278,6 +278,10 @@ footer a:hover {
         padding-block: 2.75rem;
     }
 
+    h1 {
+        font-size: 1.5rem;
+    }
+
     h2 {
         font-size: 1.15rem;
     }
