@@ -38,9 +38,14 @@ footer :is(i, a) {
 }
 
 /* ==================== DARK THEME ===================== */
-body.dark {
+body.dark,
+body.dark .modal__box {
     color: var(--text-dark);
     background-color: var(--bg-dark);
+}
+
+body.dark .modal__box {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 /* ==================== HEADER ===================== */
@@ -158,6 +163,79 @@ footer a:hover {
     text-underline-offset: 1px;
 }
 
+/* ==================== MODAL ===================== */
+.modal {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+}
+
+.modal[open] {
+    display: grid;
+    place-items: center;
+}
+
+.modal__box {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.modal__box h2 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.modal__box p {
+    line-height: 1.3;
+}
+
+.modal__box a {
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration-style: dashed;
+    text-underline-offset: 3px;
+    transition: 0.3s;
+}
+
+.modal__box a:hover {
+    text-decoration-style: solid;
+    text-underline-offset: 1px;
+}
+
+.modal__box form {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal__box .btn-close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 15px;
+    transition: transform 0.3s;
+}
+
+.modal__box .btn-close:hover {
+    transform: scale(1.1);
+}
+
 /* ==================== RESPONSIVE ===================== */
 @media screen and (max-width: 575px) {
     .main__icon {
@@ -171,10 +249,40 @@ footer a:hover {
     h1 {
         font-size: 1.8rem;
     }
+
+    .modal__box {
+        padding-inline: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 425px) {
     .container {
         --margin-container: 1rem;
+    }
+
+    .modal__box {
+        margin: 0.75rem;
+        padding-inline: 1rem;
+    }
+
+    .modal__box .btn-close {
+        width: 25px;
+        height: 25px;
+        font-size: 1rem;
+        line-height: 12.5px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .modal__box {
+        padding-block: 2.75rem;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+    }
+
+    p {
+        font-size: 0.85rem;
     }
 }

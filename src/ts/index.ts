@@ -35,3 +35,13 @@ function changeMainColor() {
 }
 
 setInterval(changeMainColor, 1500);
+
+/* ==================== TOGGLE STORY ===================== */
+const btnStory = document.getElementById("btn-story");
+const modalStory = document.getElementById("modal-story") as HTMLDialogElement;
+
+if (btnStory && modalStory) {
+    btnStory.addEventListener("click", () => {
+        modalStory.showModal();
+    });
+}

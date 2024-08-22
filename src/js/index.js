@@ -29,3 +29,11 @@ function changeMainColor() {
     root.style.setProperty("--main-color", `rgb(${r},${g}, ${b})`);
 }
 setInterval(changeMainColor, 1500);
+/* ==================== TOGGLE STORY ===================== */
+const btnStory = document.getElementById("btn-story");
+const modalStory = document.getElementById("modal-story");
+if (btnStory && modalStory) {
+    btnStory.addEventListener("click", () => {
+        modalStory.showModal();
+    });
+}
