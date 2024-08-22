@@ -1,4 +1,4 @@
-import roll from "./roll.js";
+import roll from "./helper/roll.js";
 
 /* ==================== TOGGLE THEME ===================== */
 const btnTheme = document.getElementById("btn-theme");
