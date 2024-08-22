@@ -1,4 +1,4 @@
-import parseClipboardItems from "./helper/parseClipboardItems.js";
+import handlePaste from "./helper/handlePaste.js";
 import roll from "./helper/roll.js";
 /* ==================== TOGGLE THEME ===================== */
 const btnTheme = document.getElementById("btn-theme");
@@ -39,12 +39,13 @@ if (btnStory && modalStory) {
     });
 }
 /* ==================== CAPTURE PASTE ===================== */
-document.addEventListener("paste", (event) => {
-    const clipboardData = event.clipboardData;
-    if (!clipboardData) {
-        console.info("There is no clipboard data");
-    }
-    else {
-        parseClipboardItems(clipboardData.items);
-    }
+document.addEventListener("paste", async () => {
+    await handlePaste();
 });
+/* ==================== PASTE BY CLICK MAIN ===================== */
+const main = document.getElementById("main");
+if (main) {
+    main.addEventListener("click", async () => {
+        await handlePaste();
+    });
+}
