@@ -47,7 +47,7 @@ if (btnStory && modalStory) {
     });
 }
 
-/* ==================== CAPTURE CTRL + V KEYBOARD ===================== */
+/* ==================== CAPTURE PASTE ===================== */
 document.addEventListener("paste", (event: ClipboardEvent) => {
     const clipboardData = event.clipboardData;
 

@@ -13,7 +13,8 @@ if (btnTheme) {
             body.classList.remove("dark");
             btnTheme.className = "ri-sun-fill";
             localStorage.removeItem("darkTheme");
-        } else {
+        }
+        else {
             body.classList.add("dark");
             btnTheme.className = "ri-moon-fill";
             localStorage.setItem("darkTheme", "true");
@@ -42,7 +43,8 @@ document.addEventListener("paste", (event) => {
     const clipboardData = event.clipboardData;
     if (!clipboardData) {
         console.info("There is no clipboard data");
-    } else {
+    }
+    else {
         parseClipboardItems(clipboardData.items);
     }
 });
