@@ -1,7 +1,7 @@
-<center>
-<img src="./src/img/favicon.svg" width="100px" alt="logo">
-<h1> PASTE IMAGE TO DOWNLOAD</h1>
-</center>
+<p align='center'>
+  <img src="./src/img/favicon.svg" width="100px" alt="logo">
+</p>
+<h1 align='center'> PASTE IMAGE TO DOWNLOAD</h1>
 
 ## TABLE OF CONTENTS
 - [TABLE OF CONTENTS](#table-of-contents)
