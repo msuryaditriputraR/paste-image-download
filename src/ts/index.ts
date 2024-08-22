@@ -1,3 +1,4 @@
+import parseClipboardItems from "./helper/parseClipboardItems.js";
 import roll from "./helper/roll.js";
 
 /* ==================== TOGGLE THEME ===================== */
@@ -45,3 +46,14 @@ if (btnStory && modalStory) {
         modalStory.showModal();
     });
 }
+
+/* ==================== CAPTURE CTRL + V KEYBOARD ===================== */
+document.addEventListener("paste", (event: ClipboardEvent) => {
+    const clipboardData = event.clipboardData;
+
+    if (!clipboardData) {
+        console.info("There is no clipboard data");
+    } else {
+        parseClipboardItems(clipboardData.items);
+    }
+});

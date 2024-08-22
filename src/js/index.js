@@ -1,3 +1,4 @@
+import parseClipboardItems from "./helper/parseClipboardItems.js";
 import roll from "./helper/roll.js";
 /* ==================== TOGGLE THEME ===================== */
 const btnTheme = document.getElementById("btn-theme");
@@ -12,8 +13,7 @@ if (btnTheme) {
             body.classList.remove("dark");
             btnTheme.className = "ri-sun-fill";
             localStorage.removeItem("darkTheme");
-        }
-        else {
+        } else {
             body.classList.add("dark");
             btnTheme.className = "ri-moon-fill";
             localStorage.setItem("darkTheme", "true");
@@ -37,3 +37,12 @@ if (btnStory && modalStory) {
         modalStory.showModal();
     });
 }
+/* ==================== CAPTURE PASTE ===================== */
+document.addEventListener("paste", (event) => {
+    const clipboardData = event.clipboardData;
+    if (!clipboardData) {
+        console.info("There is no clipboard data");
+    } else {
+        parseClipboardItems(clipboardData.items);
+    }
+});
